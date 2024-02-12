@@ -19,6 +19,8 @@ export default {
   <div class="container">
     <div class="row">
 
+      <!-- Cycle the list of cards taking it from the store -->
+      <!-- I pass the single card data through props -->
       <Card
         v-for="character in store.charactersList" 
         :key="character.id"
