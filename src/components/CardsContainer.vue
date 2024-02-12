@@ -1,8 +1,14 @@
 <script>
-import Card from './Card.vue'
+import Card from './Card.vue';
+import {store} from '../data/store';
 
 export default {
   name: 'CardsContainer',
+  data(){
+    return{
+      store
+    }
+  },
   components:{
     Card
   }
@@ -13,15 +19,15 @@ export default {
   <div class="container">
     <div class="row">
 
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Card
+        v-for="character in store.charactersList" 
+        :key="character.id"
+        :img="character.image"
+        :name="character.name"
+        :status="character.status"
+        :species="character.species"
+        />
+    
     </div>
   </div>
 </template>

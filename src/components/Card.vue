@@ -2,15 +2,21 @@
 
 export default {
   name: 'Card',
+  props:{
+    img: String,
+    name: String,
+    status: String,
+    species: String
+  }
 }
 </script>
 
 <template>
   <div class="mdf-card col mb-3">
-    <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
-    <h4>Nome</h4>
-    <p>Stile</p>
-    <p>Prova</p>
+    <img :src="img" :alt="name">
+    <h4>{{name}}</h4>
+    <p>{{status}}</p>
+    <p>{{species}}</p>
   </div>
 
 </template>
