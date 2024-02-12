@@ -14,3 +14,7 @@ body {
   background-image: linear-gradient(lighten($primary-color, 80%),
       lighten($primary-color, 60%));
 }
+
+h1 {
+  font-weight: 700;
+}
