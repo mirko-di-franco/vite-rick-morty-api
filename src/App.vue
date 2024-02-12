@@ -5,9 +5,11 @@ export default {
 </script>
 
 <template>
-  <h1>..</h1>
+  <h1>...</h1>
 </template>
 
-<style>
+<style lang="scss">
+@use './scss/main.scss';
+
 
 </style>
