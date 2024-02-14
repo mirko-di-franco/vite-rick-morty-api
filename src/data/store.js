@@ -2,7 +2,14 @@ import { reactive } from 'vue';
 
 export const store = reactive({
 
-  apiUrl: 'https://rickandmortyapi.com/api/character',
+  apiUrlOriginal: 'https://rickandmortyapi.com/api/character',
+  apiUrl: '',
   charactersList: [],
-  totalCount: 0
+  totalCount: 0,
+  isLoading: true,
+  next: null,
+  prev: null,
+  listStatus: [],
+  statusToSearch: '',
+  nameToSearch: ''
 });

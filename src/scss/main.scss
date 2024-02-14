@@ -11,8 +11,8 @@ body {
   font-family: $main-font;
   color: $primary-color;
   min-height: 100vh;
-  background-image: linear-gradient(lighten($primary-color, 80%),
-      lighten($primary-color, 60%));
+  background-image: linear-gradient(lighten($primary-color, 70%),
+      lighten($primary-color, 50%));
 }
 
 h1 {
